@@ -22,7 +22,7 @@ app.use(middleware.logger);
 // });
 
 app.get('/about', middleware.requireAuthentication, function (req, res) { //request holds url, JSON, cookies, data etc. Response is what we send back.
-	res.send('About us...');
+	res.send('About us...'); 
 });
 
 app.use(express.static(__dirname + '/public'));
@@ -30,3 +30,5 @@ app.use(express.static(__dirname + '/public'));
 app.listen(PORT, function() {
 	console.log('Express Server started on port ' + PORT);
 }); //reserve a port to listen (3000 is usually not used by PC)
+
+//adding comment to test git
