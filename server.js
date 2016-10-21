@@ -1,6 +1,6 @@
 var express = require('express'); 
 var app = express(); //create express app
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 var middleware = require('./middleware.js')
 
@@ -16,3 +16,6 @@ app.listen(PORT, function() {
 	console.log('Express Server started on port ' + PORT);
 });
 
+//ssh key - unique identifier
+//github view our code and collaborate with others
+//heroku - deploy our app so its visible to web
